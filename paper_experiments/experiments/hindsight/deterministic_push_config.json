@@ -1,0 +1,22 @@
+{
+  "discount_factor": 0.98,
+  "policy_learning_rate": 8e-4,
+  "critic_learning_rate": 8e-4,
+  "density_learning_rate": 2e-4,
+  "burnin": 10000,
+  "batch_size": 512,
+  "min_replay_size": 1000,
+  "replay_size": 1500000,
+  "density_replay_size": 50000,
+  "target_update_step": 0.01,
+  "exploration_noise": -2.3,
+  "target_action_noise": 0.0,
+  "env_name": "FetchPush-v1",
+  "progressive_noise": false,
+  "small_goal": false,
+  "shuffle_goals": false,
+  "sequence_length": 4,
+  "num_bijectors": 6,
+  "reward_factor": 0.02,
+  "step_limit": 1.0
+}

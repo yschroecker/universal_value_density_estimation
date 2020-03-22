@@ -1,0 +1,10 @@
+Example commands to run UVD Fetch experiments:
+DISPLAY=:0 PYTHONPATH=. python paper_experiments/experiments/hindsight/fetch_uvd.py -F ~/sacred with paper_experiments/experiments/hindsight/deterministic_slide_config.json --force;
+DISPLAY=:0 PYTHONPATH=. python paper_experiments/experiments/hindsight/fetch_her.py -F ~/sacred with paper_experiments/experiments/hindsight/noisy_slide_config.json 'policy_learning_rate=0.0002' 'critic_learning_rate=0.0002' --force;
+
+Example commands to run VDI locomotion experiments:
+DISPLAY=:0 PYTHONPATH=. python paper_experiments/experiments/imitation/vdi_cheetah.py -F ~/sacred/                      
+DISPLAY=:0 PYTHONPATH=. python paper_experiments/experiments/imitation/vdi_humanoid.py -F ~/sacred/                      
+
+Required libraries:
+Pytorch, sacred, gym, tqdm, pandas, numpy, scipy, matplotlib
